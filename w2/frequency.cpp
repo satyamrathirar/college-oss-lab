@@ -14,16 +14,15 @@ void toLowercase(string &str) {
 int main()
 {
     string paragraph;
-    map<std::string, int> wordCount;
+    map<string, int> wordCount;
     cout << "Enter a paragraph:\n";
-    getline(std::cin, paragraph);
+    getline(cin, paragraph);
 
     toLowercase(paragraph);
 
     istringstream stream(paragraph);
     string word;
     while (stream >> word) {
-        // Remove punctuation from the beginning and end of the word
         word.erase(remove_if(word.begin(), word.end(), [](unsigned char c) { return ispunct(c); }), word.end());
         if (!word.empty()) {
             wordCount[word]++;
