@@ -1,4 +1,4 @@
-https://github.com/tantaneity/dijkstra-algorithm\
+https://github.com/tantaneity/dijkstra-algorithm
 \
 The program has the following functions :\
 Primary function called dijkstra : to initialize the graph with the values given by the user using the priority queue .\
